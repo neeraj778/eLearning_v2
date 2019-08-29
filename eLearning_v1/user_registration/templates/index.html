@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content%}	
+	{% load staticfiles %}
+
+	{% for course in courses %}
+		<li>
+			{{ course.course_name }}
+		</li>
+	{% endfor %}
+{% endblock %}
